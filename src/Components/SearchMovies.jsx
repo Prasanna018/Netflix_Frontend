@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getMovieDetails } from '../redux/searchSlice.js';
 import { setIsLoading } from '../redux/userSlice.js';
 import MoviesList from './MoviesList.jsx';
+
+
 function SearchMovies() {
     const [searchMovie, setSearchMovie] = useState("")
     const dispatch = useDispatch();

@@ -47,7 +47,7 @@ function Header() {
             {
                 user && (<div className='flex items-center '>
                     <IoIosArrowDropdown className='text-black size-8'></IoIosArrowDropdown>
-                    <h1 className='pr-2 text-white font-semibold' >{user.fullname}
+                    <h1 className={`pr-2 text-white font-semibold ${toggle}? text-black`} >{user.fullname}
 
                     </h1>
                     <div className='flex items-center'>
@@ -55,7 +55,7 @@ function Header() {
                             logout
 
                         </button>
-                        <button onClick={handleToggle} className='text-black rounded-md bg-red-500 px-2 py-2  ml-2'>
+                        <button onClick={handleToggle} className={`text-black rounded-md bg-red-500 px-2 py-2  ml-2  `}>
                             {
                                 toggle ? "Back To Home" : "Search Movies"
                             }
