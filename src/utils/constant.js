@@ -1,5 +1,6 @@
 
-export const API_END_POINT = `http://localhost:7000/api/auth/user/`; // imp
+export const API_END_POINT = "https://netflix-backend-aezn.onrender.com"
+//  `http://localhost:7000/api/auth/user/`; // imp
 export const options = {
     method: 'GET',
     headers: {
