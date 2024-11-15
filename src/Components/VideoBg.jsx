@@ -2,11 +2,14 @@ import React from 'react'
 import useGetMovieId from '../hooks/useGetMovieId'
 import { useSelector } from 'react-redux';
 
+
+
 function VideoBg({ movieId, bool }) {
 
     useGetMovieId(movieId);
-    const movieTrailer = useSelector((store) => store.movie.movieTrailer)
-    console.log(movieTrailer)
+    const movieTrailer = useSelector((store) => store.movie.movieTrailer);
+    console.log(movieTrailer);
+
     return (
         <div className='w-[vw] overflow-hidden'>
             {
