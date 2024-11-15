@@ -47,7 +47,7 @@ function Header() {
             {
                 user && (<div className='flex items-center '>
                     <IoIosArrowDropdown className='text-black size-8'></IoIosArrowDropdown>
-                    <h1 className={`pr-2 text-white font-semibold ${toggle}? text-black`} >{user.fullname}
+                    <h1 className={`pr-2 font-semibold ${toggle ? "text-black" : "text-white"}`} >{user.fullname}
 
                     </h1>
                     <div className='flex items-center'>
