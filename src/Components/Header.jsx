@@ -41,7 +41,8 @@ function Header() {
     return (
         <div className=' absolute top-0 z-10 w-full bg-transparent  flex justify-between items-center px-6'>
 
-            < img className='w-56 p-2' src="https://freepnglogo.com/images/all_img/1723819567netflix-logo-transparent-png.png" ></img >
+            {/* < img className='w-56 p-2' src={'../assests/movie-loom-high-resolution-logo-transparent (1).png'} ></img > */}
+            <span className='text-5xl font-extrabold italic font-serif space-x-3 p-2 text-red-600'>Movie-Loom</span>
 
 
             {
